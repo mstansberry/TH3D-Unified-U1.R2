@@ -196,7 +196,7 @@
 //===========================================================================
 // Creality CR-10 Options - Select 'Sanguino 1284P' from Tools > Board
 //===========================================================================
-//#define CR10
+#define CR10
 //#define CR10_MINI
 //#define CR10_S4
 //#define CR10_S5
@@ -204,7 +204,7 @@
 // If you are using our EZOut V1/V2 (connects to LCD header) filament sensor kit please follow the install guide
 // and then uncomment the #define EZOUT_ENABLE line below.
 // Do NOT ever connect our filament sensor without the supplied adapter board.
-//#define EZOUT_ENABLE
+#define EZOUT_ENABLE
 
 // EZABL Probe Mounts
 //#define CR10_OEM
@@ -213,7 +213,7 @@
 //#define CR10_FANG
 //#define TM3DAERO
 //#define TM3DAERO_EXTENDED
-//#define PETSFANG //This is the RIGHT mounted version - if using the left mount please use the CUSTOM_PROBE option.
+#define PETSFANG //This is the RIGHT mounted version - if using the left mount please use the CUSTOM_PROBE option.
 //#define CUSTOM_PROBE
 
 //===========================================================================
@@ -935,8 +935,8 @@
   *      O-- FRONT --+
   *    (0,0)
   */
-  #define X_PROBE_OFFSET_FROM_EXTRUDER 10  // X offset: -left  +right  [of the nozzle]
-  #define Y_PROBE_OFFSET_FROM_EXTRUDER 10  // Y offset: -front +behind [the nozzle]
+  #define X_PROBE_OFFSET_FROM_EXTRUDER 50  // X offset: -left  +right  [of the nozzle]
+  #define Y_PROBE_OFFSET_FROM_EXTRUDER -6  // Y offset: -front +behind [the nozzle]
 #endif
 
 //===========================================================================
@@ -1020,7 +1020,7 @@
 // MISC --------------------------------------------
 
 // If you have a 5015 fan that whines when under 100% speed uncomment the below line.
-//#define FAN_FIX
+#define FAN_FIX
 
 // Use your own printer name
 //#define USER_PRINTER_NAME "CHANGE ME" 
@@ -1048,9 +1048,9 @@
 // custom XY offsets. This is provided for convenience and is unsupported with included product support.
 // How to use - measure (home XY then jog using the LCD 1mm at a time) the X and Y distance the nozzle is off
 // the build plate and then put those as NEGATIVE values below, positive values will NOT work (move your endstops to fix a positve offset).
-//#define HOME_ADJUST
-#define X_HOME_ADJUST_LOCATION -10
-#define Y_HOME_ADJUST_LOCATION -10
+#define HOME_ADJUST
+#define X_HOME_ADJUST_LOCATION -7
+#define Y_HOME_ADJUST_LOCATION -7
 
 // LINEAR ADVANCE ----------------------------------
 // See here on how to use Linear Advance: http://marlinfw.org/docs/features/lin_advance.html
